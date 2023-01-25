@@ -3,13 +3,13 @@ function loadCrosswordPuzzle(){
     // this is the  the table on the html page
     var table = document.getElementById ("puzzle")
     // an array that holds the word for the crossword puzzle 
-    var arrWords = new Array ("Javascript", "cascade", "html", "Kevin")
+    var arrWords = new Array ("Javascript", "cascade", "html", "Kevin", "Salgado")
 
     // this is the 2nd row on the table
     var tr = table.rows[1];
     /*this for loop prints out the first word in the array
      on the 2nd row of the table*/
-    for(var i=0; i<arrWords[0].length; i++){
+for(var i=0; i<arrWords[0].length; i++){
         //this is the cell that will have a letter added to it
         var cell = tr.cells[i];
         // nnText allows you to change the text of the cell
@@ -35,12 +35,23 @@ for(var i=0; i<arrWords[2].length; i++){
         var cell = trow.cells[9];
         cell.innerText = arrWords[2][i];
     }
+
+    //this is the 6th row on the table
     var tr = table.rows[6];
-    for(var i=0; i<arrWords[3].length; i++){
+for(var i=0; i<arrWords[3].length; i++){
         //this is the cell that will have a letter added to it
         var cell = tr.cells[i];
         // nnText allows you to change the text of the cell
         cell.innerText = arrWords[3][i];
+    }
+
+    //this is the 6th row on the table
+    var tr = table.rows[4];
+for(var i=0; i<arrWords[4].length; i++){
+        //this is the cell that will have a letter added to it
+        var cell = tr.cells[i];
+        // nnText allows you to change the text of the cell
+        cell.innerText = arrWords[4][i];
     }
 
 }
